@@ -30,6 +30,7 @@ function App() {
     <Layout>
       <Switch>
       <Route path="/" exact component={Home} />
+      <Route path="/accountownerclient" exact component={Home} />
       <Route path="/owner-list" component={AsyncOwnerList} />
       <Route path="/ownerDetails/:id" component={AsyncOwnerDetails} />
       <Route path="/createOwner" component={AsyncCreateOwner} />
@@ -37,6 +38,7 @@ function App() {
       <Route path="/deleteOwner/:id" component={AsyncDeleteOwner} />
       <Route path="/500" component={InternalServer} />
       <Route path="*" component={NotFound} />
+      
 
       </Switch>
 
